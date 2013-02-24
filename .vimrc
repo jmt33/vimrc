@@ -20,7 +20,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
-Bundle 'bbommarito/vim-slim'
+Bundle 'slim-template/vim-slim/'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 
