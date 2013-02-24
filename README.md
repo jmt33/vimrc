@@ -19,3 +19,5 @@ Install will overwrite your .vimrc, .gvimrc file and .vim folder, be sure **back
     ./deploy.sh
 
 Done.
+
+# 来自 https://github.com/chloerei/vimrc
