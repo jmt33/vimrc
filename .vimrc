@@ -24,6 +24,13 @@ Bundle 'slim-template/vim-slim/'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 
+
+Bundle "Yggdroot/indentLine"
+Bundle "airblade/vim-gitgutter"
+Bundle "gregsexton/gitv"
+Bundle "tpope/vim-commentary"
+Bundle "tpope/vim-surround"
+Bundle "Raimondi/delimitMate"
 " 字体
 set guifont=monaco\ 10
 
