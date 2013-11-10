@@ -1,8 +1,20 @@
 " git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 " BundleInstall
-
+set laststatus=2
+set statusline=%F:\ %l
+set hidden "in order toswitch between buffers with unsaved change
+map <s-tab> :bq<cr>
+map <tab> :bn<cr>
 set nocompatible               " be iMproved
 filetype off                   " required!
+" CtrolP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_open_multiple_files = 'v'
+" 忽略
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -20,7 +32,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
-Bundle 'slim-template/vim-slim/'
+"Bundle 'slim-template/vim-slim/'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 
