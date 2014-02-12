@@ -3,8 +3,10 @@
 set laststatus=2
 set statusline=%F:\ %l
 set hidden "in order toswitch between buffers with unsaved change
-map <s-tab> :bq<cr>
-map <tab> :bn<cr>
+nnoremap <silent> <C-Left> :bn<CR>
+nnoremap <silent> <C-Right> :bp<CR>
+" map <s-tab> :bq<cr>
+" map <tab> :bn<cr>
 set nocompatible               " be iMproved
 filetype off                   " required!
 " CtrolP
@@ -24,7 +26,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-
+Bundle 'taglist.vim'
 Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
@@ -35,7 +37,7 @@ Bundle 'groenewege/vim-less'
 "Bundle 'slim-template/vim-slim/'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
-
+Bundle 'jlanzarotta/bufexplorer'
 
 Bundle "Yggdroot/indentLine"
 Bundle "airblade/vim-gitgutter"
@@ -112,6 +114,7 @@ nmap <F4> :q<cr>
 nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
+nnoremap <silent> <F12> :TlistToggle<CR>
 
 " syntastic
 let g:syntastic_check_on_open = 1
