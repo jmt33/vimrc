@@ -38,7 +38,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'jlanzarotta/bufexplorer'
-
+Bundle 'terryma/vim-multiple-cursors'
 Bundle "Yggdroot/indentLine"
 Bundle "airblade/vim-gitgutter"
 Bundle "gregsexton/gitv"
@@ -128,3 +128,9 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
 nmap <A-up> :lprev<cr>
 nmap <A-down> :lnext<cr>
 nmap <A-right> :ll<cr>
+
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'"
