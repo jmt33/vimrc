@@ -28,12 +28,9 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'taglist.vim'
 Bundle 'Align'
-Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
-Bundle 'groenewege/vim-less'
 "Bundle 'slim-template/vim-slim/'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
@@ -45,6 +42,9 @@ Bundle "gregsexton/gitv"
 Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-surround"
 Bundle "Raimondi/delimitMate"
+" 文本操作插件
+Bundle "Shougo/wildfire.vim"
+
 " 字体
 set guifont=monaco\ 10
 
@@ -134,3 +134,12 @@ let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'"
+
+"文本操作插件
+" This selects the next closest text object.
+let g:wildfire_fuel_map = "<ENTER>"
+"
+" " This selects the previous closest text object.
+let g:wildfire_water_map = "<BS>"
+
+let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
