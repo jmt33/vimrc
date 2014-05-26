@@ -28,6 +28,8 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'taglist.vim'
 Bundle 'Align'
+" Game
+Bundle 'TeTrIs'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'hallison/vim-markdown'
@@ -75,6 +77,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+" 去除交换文件
+set noswapfile
+
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
@@ -115,6 +120,7 @@ nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
 nnoremap <silent> <F12> :TlistToggle<CR>
+nmap <F9> :NERDTree ~/project/saas<cr>
 
 " syntastic
 let g:syntastic_check_on_open = 1
@@ -143,3 +149,8 @@ let g:wildfire_fuel_map = "<ENTER>"
 let g:wildfire_water_map = "<BS>"
 
 let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
+
+" 保存
+imap <C-s> <Esc>:w!<CR>i
+
+
