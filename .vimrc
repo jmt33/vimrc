@@ -70,7 +70,7 @@ filetype plugin indent on
 set autoindent
 
 "打开鼠标功能
-set mouse=a
+"set mouse=a
 
 "指标符宽度
 set tabstop=4
