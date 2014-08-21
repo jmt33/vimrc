@@ -20,7 +20,7 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+set fdm=marker
 
 " let Vundle manage Vundle
 " required!
@@ -46,6 +46,8 @@ Bundle "Raimondi/delimitMate"
 " 文本操作插件
 Bundle "Shougo/wildfire.vim"
 
+"全局搜索
+Bundle 'mileszs/ack.vim'
 " 平滑滚动插件
 Bundle 'yonchu/accelerated-smooth-scroll'
 Bundle 'Shougo/neocomplete.vim'
@@ -158,6 +160,14 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
 
 " 保存
 imap <C-s> <Esc>:w!<CR>i
+
+
+
+"全局搜索
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+
 
 
 " 自动补全配置
