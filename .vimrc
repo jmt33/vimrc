@@ -44,7 +44,7 @@ Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-surround"
 Bundle "Raimondi/delimitMate"
 " 文本操作插件
-Bundle "Shougo/wildfire.vim"
+" Bundle "Shougo/wildfire.vim"
 
 "全局搜索
 Bundle 'mileszs/ack.vim'
