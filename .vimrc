@@ -72,7 +72,7 @@ if version >= 703
 
     " Override color for highlighted column
     " Often it is this eye melting red (Unecessary for liquidcarbon and nazca)
-"    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
+    "    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 
 
@@ -138,7 +138,6 @@ nmap <F3> :wa<cr>
 nmap <F4> :q<cr>
 nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
-nmap <F11> gg=G<C-o>
 nnoremap <silent> <F12> :TlistToggle<CR>
 nmap <F9> :NERDTree ~/project/saas<cr>
 
@@ -178,3 +177,9 @@ imap <C-s> <Esc>:w!<CR>i
 "全局搜索
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" 文件切换
+nnoremap <silent> <F10> :BufExplorer<CR>
+nnoremap <silent> <s-F10> :ToggleBufExplorer<CR>
+nnoremap <silent> <m-F10> :BufExplorerHorizontalSplit<CR>
+nnoremap <silent> <c-F10> :BufExplorerVerticalSplit<CR>
